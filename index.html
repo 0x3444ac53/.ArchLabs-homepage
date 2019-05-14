@@ -2,7 +2,7 @@
 
 <head>
     <title>...</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" id="stylesheet" href="style.css">
     <meta charset="utf-8">
     <link rel="shortcut icon" href="res/logo-dark.png" />
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
@@ -10,18 +10,15 @@
     <script src="script.js"></script>
 </head>
 <script type="text/javascript">
-<!--
-if (screen.width <= 699) {
-document.location = "mobile.html";
-}
-//-->
+var configs = ["anime.css", "lostwoods.css", "simple.css"];
+document.getElementById("stylesheet").setAttribute("href", configs[Math.floor(Math.random()*configs.length)]);
 </script>
 <body>
 
     <div class="stripe">
         <div class="title"><span>Social</span></div>
         <div class="content">
-            <span class="item"><a href="https://www.reddit.com">reddit</a></span><span class="item"><a href="https://www.youtube.com">youtube</a></span><span class="item"><a href="https://www.github.com">Github</a></span><span class="item"><a href="https://twitter.com/">Twitter</a></span>
+            <span class="item"><a href="https://www.reddit.com">reddit</a></span><span class="item"><a href="https://www.youtube.com">youtube</a></span><span class="item"><a href="https://www.github.com">Github</a></span><span class="item"><a href="https://twitter.com/">Twitter</a></span><span class="item"><a href="https://news.ycombinator.com">HackerNews</a></span>
         </div>
     </div>
 
@@ -47,9 +44,9 @@ document.location = "mobile.html";
     </div>
 
 
-    <form method="get" action="https://www.duckduckgo.com">
-            <input type="text" name="q" placeholder="Search..." autofocus>
-            <p><span name="yt">arch.wiki</span><span name="sr">arch.forums</span><span name="a">arch.packages</span><span name="w">openbox.official</span></p>
+    <form method="get" action="https://www.google.com/search">
+            <input type="text" name="q" placeholder="Hello..." autofocus>
+            <p><span name="yt">reddit</span><span name="sr">youtube</span><span name="a">wikipedia</span><span name="w">arch.wiki</span><span name="f">help</span></p>
         </form>
 </body>
 </html>

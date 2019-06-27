@@ -4,20 +4,6 @@
     font-family: "Monospace";
 }
 
-#Greeting p{
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    color: #9a716b;
-    animation:colorchange 5s infinite;
-}
-
-@keyframes colorchange{
-    0% {background-color: #9a716b;}
-    50% {background-color: #fadbbf;}
-    100% {background-color: #9a716b;}
-}
-
 body {
     width: 100vw;
     height: 100vh;

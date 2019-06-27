@@ -1,22 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-
 * {
     margin: 0;
     padding: 0;
     font-family: "Monospace";
-}
-
-#Greeting p{
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    animation:colorchange 5s infinite;
-}
-
-@keyframes colorchange{
-    0% {color: #202916;}
-    50% {color: #c7a626;}
-    100% {color: #202916;}
 }
 
 body {

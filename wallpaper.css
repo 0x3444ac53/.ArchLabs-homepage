@@ -1,3 +1,5 @@
+@import url('file:///home/ellie/.cache/wal/colors.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,23 +8,24 @@
 
 #Greeting p{
     position: absolute;
-    top: 40%;
+    top: 25%;
     left: 40%;
-    color: #9a716b;
+    color: #373737;
+    background-color: var(--color7);
     animation:colorchange 5s infinite;
 }
 
 @keyframes colorchange{
-    0% {background-color: #9a716b;}
-    50% {background-color: #fadbbf;}
-    100% {background-color: #9a716b;}
+    0% {background-color: var(--color8); color: var(--color7)}
+    50% {background-color: var(--color7); color: var(--color8)}
+    100% {background-color: var(--color8); color: var(--color7)}
 }
 
 body {
     width: 100vw;
     height: 100vh;
-    background:url("res/Arikawa_Hime_Holding_C_Programming_Language_wp.jpg");
-    background-size: cover;
+    background-color: var(--color7);
+    background-size: tile;
 }
 
 h2 {
@@ -43,13 +46,13 @@ h3 {
     text-align: center;
     font-weight: 500;
     font-size: 60px;
-    color: white;
+    color: ;
 }
 
 form {
     position: absolute;
-    left:60%;
-    top: 70%;
+    left:50%;
+    top: 35%;
     width: 600px;
     height: 50px;
     transform: translateX(-50%);
@@ -61,7 +64,8 @@ form p {
     display: flex;
     margin-top: 10px;
     justify-content: space-between;
-    color: #eb9d89;
+    color: var(--color7);
+    background-color: var(--color8);
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -69,15 +73,17 @@ form p {
 form p span {
     cursor: pointer;
     transition: color 0.5s;
+    transition: background-color 0.5s;
 }
 
 form p span:hover {
-    color: #f9e0d1;
+    color: var(--color8);
+    background-color: var(--color7);
 }
 
 input[type=text] {
     width: 600px;
-    color: #321512;
+    color: #f4f4f4;
     height: 50px;
     border: 1px solid #a0a0a0;
     border-radius: 2px;
@@ -88,25 +94,26 @@ input[type=text] {
 
 input[type=text]:focus {
     border-color: #707070;
-    background-color: #f9e0d1;
+    background-color: #000000;
 }
 
 .stripe {
     position: relative;
     width: 40px;
     height: 25vh;
-    color: #eb9d89;
+    color: var(--color4);
     z-index: 2;
-    background-color: #f9e0d1;
+    background-color: var(--color3);
 }
 
 .stripe .title  {
     position: relative;
     width: 40px;
-    color: #6f211a;
+    color: var(--color5);
     height: 100%;
     float: left;
     box-sizing: border-box;
+    transition: color 0.5s;
 }
 
 .stripe .title span {
@@ -152,5 +159,12 @@ input[type=text]:focus {
 
 .stripe .content span a {
     text-decoration: none;
-    color: #6f211a;
+    color: var(--color5);
+    transition: color 1s;
+    transition: background-color 1s;
+}
+
+.stripe .content span a:hover{
+    color: #373737;
+    background-color: #f4f4f4;
 }

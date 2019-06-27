@@ -34,6 +34,12 @@ $(document).ready(function() {
         $search.focus().setCursorPosition(curr.length);
     });
 
+    $("span[name='opend']").click(function() {
+        var curr = $search.val();
+        $search.val(curr + " intitle:\"index of\" -inurl:(jsp|pl|php|html|aspx|htm|cf|shtml) -inurl:(hypem|unknownsecret|sirens|writeups|trimediacentral|articlescentral|listen77|mp3raid|mp3toss|mp3drug|theindexof|index_of|wallywashis|indexofmp3)");
+        $search.focus().setCursorPosition(curr.length);
+    });
+
    //Tabs
 
     $(".stripe").mouseenter(function() {

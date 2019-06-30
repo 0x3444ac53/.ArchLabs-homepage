@@ -11,9 +11,7 @@ $(document).ready(function() {
     });
 
     $("span[name='sr']").click(function() {
-        var curr = $search.val();
-        $search.val(curr + " site:www.youtube.com");
-        $search.focus().setCursorPosition(curr.length);
+        document.getElementById("searchbar").setAttribute("action", "https://youtube.com/results");
     });
 
     $("span[name='a']").click(function() {

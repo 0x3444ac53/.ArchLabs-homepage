@@ -38,6 +38,22 @@ $(document).ready(function() {
         $search.focus().setCursorPosition(curr.length);
     });
 
+    $("span[name='lostwoods']").click(function() {
+        document.getElementById("stylesheet").setAttribute("href", "lostwoods.css");
+    });
+    $("span[name='anime']").click(function() {
+        document.getElementById("stylesheet").setAttribute("href", "anime.css");
+    });
+    $("span[name='simple']").click(function() {
+        document.getElementById("stylesheet").setAttribute("href", "simple.css");
+    });
+    $("span[name='cute']").click(function() {
+        document.getElementById("stylesheet").setAttribute("href", "botw1.css");
+    });
+    $("span[name='botw']").click(function() {
+        document.getElementById("stylesheet").setAttribute("href", "botw2.css");
+    });
+
    //Tabs
 
     $(".stripe").mouseenter(function() {
